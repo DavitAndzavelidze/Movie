@@ -31,7 +31,19 @@ header {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--secondary-color);
+}
+@media (max-width: 400px) {
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .search {
+    width: 90vw;
+  }
 }
 .logo span {
   color: var(--green-color);
